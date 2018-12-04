@@ -1,4 +1,4 @@
-package com.youku.study;
+package com.youku.study.java8;
 
 /**
  * @author taylor
@@ -60,6 +60,7 @@ public class LambadaTest {
         System.out.println("flatMap ---------------------------->");
         // flatMap：和map类似，不同的是其每个元素转换得到的是Stream对象，会把子Stream中的元素压缩到父集合
         strList.stream().flatMap(item -> getCharacter(item)).forEach(System.out::println);
+        //strList.stream().map(item->getCharacterEx(item)).forEach(System.out::println);
 
         System.out.println("peek    ---------------------------->");
         // peek 需调用collect
@@ -148,5 +149,13 @@ public class LambadaTest {
         builder.add(s);
         builder.accept("1");
         return builder.build();
+    }
+
+    public static String getCharacterEx(String s) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(s);
+        sb.append("1");
+
+        return sb.toString();
     }
 }

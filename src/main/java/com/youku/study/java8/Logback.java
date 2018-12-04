@@ -1,4 +1,4 @@
-package com.youku.study;
+package com.youku.study.java8;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package com.youku.study;
+package com.youku.study.java8;
 
 /**
  * @author taylor

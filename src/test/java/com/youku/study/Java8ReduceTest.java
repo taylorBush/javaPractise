@@ -39,7 +39,7 @@ public class Java8ReduceTest {
         stream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5, 6, 7});
 
         //求逻辑求乘机
-        int result2 = stream.filter(i -> i % 2 == 0).reduce(1, (i, j) -> i * j);
+        int result2 = stream.filter(i -> i % 2 == 0).reduce(2, (i, j) -> i * j);
 
         Optional.of(result2).ifPresent(System.out::println);
     }
