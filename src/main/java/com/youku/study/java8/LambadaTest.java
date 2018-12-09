@@ -134,6 +134,7 @@ public class LambadaTest {
         System.out.println(intList.stream().reduce((result, element) -> result = result + element));
         System.out.println("reduce双参数   ---------------------------->");
         System.out.println(intList.stream().reduce(0, (result, element) -> result = result + element));
+        System.out.println(intList.stream().reduce(10, (result, element) -> result = result + element));
 
         System.out.println("generate    ---------------------------->");
         // 生成一个无限长度的Stream，其中值是随机的。这个无限长度Stream是懒加载，一般这种无限长度的Stream都会配合Stream的limit()方法来用。

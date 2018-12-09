@@ -66,7 +66,11 @@ public class Transfer {
             .collect(Collectors.toList());
 
         Map<String, Long> map = nameList.stream().collect(Collectors.groupingBy(name -> name, Collectors.counting()));
-        map.forEach((k, v) -> System.out.println(k + " : " + v));
+        map.forEach((k, v) -> {
+            if (v > 1) {
+                System.out.println(k + " : " + v);
+            }
+        });
     }
 
     public List<Material> getList(boolean download) {
