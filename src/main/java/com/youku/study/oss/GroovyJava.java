@@ -3,6 +3,10 @@ package com.youku.study.oss;
 import groovy.lang.GroovyObject;
 import groovy.util.GroovyScriptEngine;
 import groovy.util.ResourceException;
+import groovy.util.GroovyTestCase;
+import groovy.util.GroovyTestSuite;
+import junit.textui.TestRunner;
+import java.util.regex.Matcher;
 
 import javax.script.ScriptException;
 import java.io.IOException;

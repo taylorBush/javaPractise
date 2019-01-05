@@ -98,6 +98,7 @@ public class Transfer {
                 String logoUrlStr = jsonObject.getString("logoUrl");
                 logoUrlStr = "https:" + logoUrlStr;
                 System.out.println("logoUrl: " + logoUrlStr);
+
                 try {
                     material.setLogoUrl(logoUrlStr);
                     if (download) {

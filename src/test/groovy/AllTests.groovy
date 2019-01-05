@@ -3,7 +3,7 @@ import groovy.util.GroovyTestSuite
 import junit.textui.TestRunner
 import java.util.regex.Matcher
 
-class AllTests extends GroovyTestCase {
+class Tests extends GroovyTestCase {
 
     // . 匹配任意一个字符
     void test_1() {
