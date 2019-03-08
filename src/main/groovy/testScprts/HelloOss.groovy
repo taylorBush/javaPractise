@@ -1,27 +1,11 @@
-package com.youku.study.oss;
-
-import groovy.lang.GroovyObject;
-import groovy.util.GroovyScriptEngine;
-import groovy.util.ResourceException;
-import groovy.util.GroovyTestCase;
-import groovy.util.GroovyTestSuite;
-import junit.textui.TestRunner;
-import java.util.regex.Matcher;
-
-import javax.script.ScriptException;
-import java.io.IOException;
+package testScprts
 
 /**
  * @author taylor
- * @date 2018/12/7
+ * @date 2019/1/12
  */
-public class GroovyJava {
-    public static void main(String[] args) {
-        scriptManager();
-    }
-
-    static void scriptManager()
-    {
+class HelloOss {
+    static void main(String[] args) {
         try
         {
             //String[] roots = new String[] { "src/main/groovy/testScprts/" };
